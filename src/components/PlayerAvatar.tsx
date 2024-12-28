@@ -18,17 +18,19 @@ const PlayerAvatar = ({ user }: PlayerAvatarProps) => {
       <Avatar sx={{ ml: "12px", mt: "12px" }} src={user.icon} alt='User Icon' />
 
       {/* Frame */}
-      <img
-        src={user.frame}
-        alt='User Frame'
-        style={{
-          height: "100%",
-          position: "absolute",
-          top: 0,
-          left: -0,
-          pointerEvents: "none" // Ensures clicks pass through to the icon if needed
-        }}
-      />
+      {user.frame && (
+        <img
+          src={user.frame || null}
+          alt='User Frame'
+          style={{
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: -0,
+            pointerEvents: "none" // Ensures clicks pass through to the icon if needed
+          }}
+        />
+      )}
     </div>
   )
 }

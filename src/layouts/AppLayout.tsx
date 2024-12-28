@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material"
+import { Box } from "@mui/material"
 import MyAppBar from "../components/MyAppBar"
 import { Outlet } from "react-router"
 
@@ -6,9 +6,9 @@ const AppLayout = () => {
   return (
     <Box sx={{ height: "100vh" }}>
       <MyAppBar />
-      <Container>
+      <Box padding={2}>
         <Outlet />
-      </Container>
+      </Box>
     </Box>
   )
 }

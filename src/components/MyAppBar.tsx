@@ -2,7 +2,7 @@ import { AppBar, Box, Button, Container, Toolbar } from "@mui/material"
 import LoginButton from "./LoginButton"
 
 const MyAppBar = () => (
-  <AppBar position='static' sx={{ marginBottom: 1 }}>
+  <AppBar position='static'>
     <Container maxWidth='xl'>
       <Toolbar disableGutters>
         <Box flexGrow={1}>

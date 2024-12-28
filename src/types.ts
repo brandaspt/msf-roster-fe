@@ -6,7 +6,7 @@ export type PlayerCard = {
 
 export type Character = {
   id: string
-  level: number
+  gearTier: number
   power: number
   portrait: string
   name: string
