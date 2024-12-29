@@ -5,12 +5,11 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
 # Install the dependencies
-RUN yarn install
+RUN npm install
 # Copy the app files
 COPY . .
-# Build the app
-RUN yarn build
 # Expose the port
-EXPOSE 3000
+ENV PORT=3001
+EXPOSE 3001
 # Run the app
-CMD ["yarn", "start"]
+CMD ["npm", "run", "dev"]
