@@ -20,7 +20,7 @@ const PlayerAvatar = ({ user }: PlayerAvatarProps) => {
       {/* Frame */}
       {user.frame && (
         <img
-          src={user.frame || null}
+          src={user.frame}
           alt='User Frame'
           style={{
             height: "100%",

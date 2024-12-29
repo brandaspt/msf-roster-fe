@@ -1,5 +1,6 @@
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5001"
+import { enVars } from "../config"
+
+const API_BASE_URL = enVars.BACKEND_ROOT_URL
 
 const fetchWithCredentials = async (
   route: string,
