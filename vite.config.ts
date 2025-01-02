@@ -5,11 +5,11 @@ import react from "@vitejs/plugin-react"
 export default defineConfig({
   base: "/",
   plugins: [react()],
-  preview: { port: 3001, strictPort: true },
+  preview: { port: 3000, strictPort: true },
   server: {
-    port: 3001,
+    port: 3000,
     strictPort: true,
     host: true,
-    origin: "http://0.0.0.0:3001"
+    origin: "http://0.0.0.0:3000"
   }
 })

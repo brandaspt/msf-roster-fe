@@ -9,7 +9,7 @@ RUN npm install
 # Copy the app files
 COPY . .
 # Expose the port
-ENV PORT=3001
-EXPOSE 3001
+ENV PORT=3000
+EXPOSE 3000
 # Run the app
 CMD ["npm", "run", "dev"]
