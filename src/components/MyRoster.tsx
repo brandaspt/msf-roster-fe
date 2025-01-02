@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react"
-import { Character } from "../types"
-import { getRoster } from "../api"
 import {
   Box,
   Button,
@@ -14,6 +11,9 @@ import {
   TextField,
   Typography
 } from "@mui/material"
+import { useEffect, useState } from "react"
+import { getRoster } from "../api"
+import { Character } from "../types"
 import CharacterCard from "./CharacterCard"
 
 const MyRoster = () => {

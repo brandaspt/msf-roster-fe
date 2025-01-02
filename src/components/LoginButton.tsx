@@ -1,13 +1,13 @@
 import { Box, Button, Typography } from "@mui/material"
+import { enVars } from "../config"
 import { useAuth } from "../context/AuthProvider"
 import PlayerAvatar from "./PlayerAvatar"
-import { enVars } from "../config"
 
 const LoginButton = () => {
   const { user } = useAuth()
 
   const handleLogin = () => {
-    window.location.href = `${enVars.BACKEND_ROOT_URL}/login`
+    window.location.href = `${enVars.BACKEND_ROOT_URL}/auth/login`
   }
 
   return user ? (
